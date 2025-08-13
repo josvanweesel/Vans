@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+	<link rel="stylesheet" href="css/main.css">
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/rellax@1.10.0/rellax.min.js"></script>
+	<script src="https://unpkg.com/scroll-out/dist/scroll-out.min.js"></script>
+	<title>Vans | Old Skool</title>
+</head>
+<body>
+
+<!-- Header -->
+<header class="header" id="header">
+	<nav class="nav">
+		<div class="nav__logo">
+			<img src="media/svg/logo.svg" alt="">
+		</div>
+
+		<input class="navigation__checkbox" id="nav-toggle" type="checkbox" onclick="toggleScroll()">
+
+		<label class="navigation__menu" for="nav-toggle">
+			<span class="navigation__icon navigation__icon--1"></span>
+			<span class="navigation__icon navigation__icon--2"></span>
+			<span class="navigation__icon navigation__icon--3"></span>
+		</label>
+
+		<div class="navigation__background"></div>
+
+		<ul class="navigation__nav">
+			<li class="navigation__item"><a class="navigation__link" href="#featured" id="scrollFeatured">Featured</a></li>
+			<li class="navigation__item"><a class="navigation__link" href="#news" id="scrollNews">News</a></li>
+			<li class="navigation__item"><a class="navigation__link" href="#customise" id="scrollCustomise">Customise</a></li>
+			<li class="navigation__item"><a class="navigation__link" href="#subscribe" id="scrollSubscribe">Subscribe</a></li>
+		</ul>
+
+		<div class="profile">
+			<img class="profile__avatar" src="media/img/avatar.jpg" alt="">
+
+			<div class="profile__name">Daniel Costa</div>
+			<img class="profile__name--dropdown" src="media/icons/arrow-small.svg" alt="">
+
+			<div class="profile__cart">
+				<img src="media/icons/cart.svg" alt="">
+			</div>
+		</div>
+	</nav>
+
+	<h1 class="heading">Old Skool</h1>
+
+	<div class="tag tag-header">The New Old Skool</div>
+
+	<div class="explore">
+		<img class="explore__arrow-shaft" src="media/svg/arrow-shaft.svg" alt="">
+		<span class="explore__text" id="scrollExplore">Explore</span>
+		<img class="explore__arrow-head" src="media/svg/arrow-head.svg" alt="">
+	</div>
+</header>
+
+<!-- Featured -->
+<section class="featured" id="featured">
+	<div class="desc">
+		<div class="desc__content">
+			<div class="desc__heading">
+				<span class="desc__heading--line" data-scroll></span>
+				<div class="desc__heading--title">Featured product</div>
+			</div>
+
+			<img class="desc__icon" src="media/icons/featured.svg" alt="">
+		</div>
+
+		<div class="desc__description">
+			<h2 class="desc__title">Vans Old Skool Classic</h2>
+
+			<p class="desc__text">
+				The Old Skool, Vans classic skate shoe and the first to bear the iconic side stripe, has a low-top lace-up silhouette
+				with a durable suede and canvas upper with padded tongue and lining and Vans signature Waffle Outsole.
+				<br><br>
+				The Anaheim Factory Old Skool 36 DX pays tribute to our first Vans factory in Anaheim, California, by borrowing details
+				from the original Old Skool and offering modernized comfort with upgraded UltraCush sockliners.
+			</p>
+
+			<a class="desc__btn" href="#">Buy now</a>
+		</div>
+	</div>
+
+	<div class="info">
+		<div class="info__links">
+			<div class="info__button--1" data-scroll>
+				<a class="info__button info__button--instagram" href="#"><img class="info__icon info__icon--instagram" src="media/icons/instagram.svg" alt="">Follow Vans</a>
+			</div>
+			<div class="info__button--2" data-scroll>
+				<a class="info__button info__button--facebook" href="#"><img class="info__icon info__icon--facebook" src="media/icons/facebook.svg" alt=""></a>
+				<a class="info__button info__button--twitter" href="#"><img class="info__icon info__icon--twitter" src="media/icons/twitter.svg" alt=""></a>
+			</div>
+		</div>
+
+		<div class="info__product">
+			<img class="info__image" src="media/img/featured.jpg" alt="">
+			<div class="info__image--mobile"></div>
+			<ul class="info__list" data-scroll>
+				<li class="info__list--item" data-scroll>Black / Red</li>
+				<li class="info__list--item" data-scroll>Suede / Textile</li>
+				<li class="info__list--item" data-scroll>Unisex</li>
+				<li class="info__list--item" data-scroll>Free Shipping & Returns</li>
+			</ul>
+		</div>
+	</div>
+
+	<img class="stamp" src="media/svg/off-the-wall.svg" alt="">
+
+	<div class="tag tag-featured">The New Old Skool</div>
+</section>
+
+<!-- News -->
+<section class="news" id="news">
+	<div class="title title__news">
+		<span class="title__news--line" data-scroll></span>
+		News of the week
+	</div>
+
+	<div class="news__container">
+		<div class="news__item news__item--1">
+			<div class="news__image news__image--1"></div>
+			<div class="news__desc">
+				<h2 class="news__title">Vanguards</h2>
+				<a class="news__link" href="#">Read more</a>
+			</div>
+		</div>
+
+		<div class="news__item news__item--2">
+			<div class="news__image news__image--2"></div>
+			<div class="news__desc">
+				<h2 class="news__title">Tony Hawk Partnership</h2>
+				<a class="news__link" href="#">Read more</a>
+			</div>
+		</div>
+		<div class="news__item news__item--3">
+			<div class="news__image news__image--3"></div>
+			<div class="news__desc">
+				<h2 class="news__title">The New Comfycush Era</h2>
+				<a class="news__link" href="#">Read more</a>
+			</div>
+		</div>
+		<div class="news__item news__item--4">
+			<div class="news__image news__image--4"></div>
+			<div class="news__desc">
+				<h2 class="news__title">Vans Imaginarium</h2>
+				<a class="news__link" href="#">Read more</a>
+			</div>
+		</div>
+		<div class="news__item news__item--5">
+			<div class="news__image news__image--5"></div>
+			<div class="news__desc">
+				<h2 class="news__title">Vans X Led Zeppelin</h2>
+				<a class="news__link" href="#">Read more</a>
+			</div>
+		</div>
+
+		<div class="news__more">
+			<a class="news__read-more" href="#">
+				<img class="news__more-shaft" src="media/svg/more-shaft.svg" alt="">
+				Read all Vans news
+				<img class="news__more-head" src="media/svg/more-head.svg" alt="">
+			</a>
+		</div>
+	</div>
+
+	<div class="red-line"></div>
+
+	<img class="pattern" src="media/svg/pattern.svg" alt="">
+</section>
+
+<!-- Customise -->
+<div class="quote-container">
+	<img class="quote" src="media/svg/quote.svg" alt="">
+</div>
+
+<!-- Customise -->
+<section class="customise" id="customise">
+	<div class="title title__customise">
+		<span class="title__customise--line" data-scroll></span>
+		Customise your own pair
+	</div>
+
+	<div class="custom">
+		<div class="custom__card">
+			<div class="custom__card--image"></div>
+			<a class="custom__card--btn" href="#">Customise</a>
+		</div>
+
+		<div class="custom__heading">
+			<h3 class="custom__heading--main">Express<br>Yourself</h3>
+			<span class="custom__heading--line"></span>
+			<h4 class="custom__heading--sub">Color Theory Collection</h4>
+		</div>
+	</div>
+</section>
+
+<!-- Subscribe -->
+<section class="subscribe" id="subscribe">
+	<div class="subscribe__bg" data-scroll></div>
+
+	<div class="window">
+		<h5 class="window__title">Subscribe</h5>
+		<p class="window__desc">Subscribe to our mailing list to get the latest news and weekly discounts!</p>
+
+		 <form class="window__button">
+			<input class="window__input" type="email" placeholder="Email Address">
+			<button class="window__submit" type="submit"><img class="window__submit--arrow" src="media/svg/submit-arrow.svg" alt=""></button>
+		 </form>
+		<p class="window__note">You can unsubscribe from our list at any time</p>
+
+		<img class="window__stamp" src="media/svg/stamp.svg" alt="">
+	</div>
+
+	<div class="tag tag-subscribe">News That Turns Heads</div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+	<img class="footer__top" id="scrollTop" src="media/svg/to-top.svg" alt="" data-scroll>
+
+	<div class="footer__bg"></div>
+
+	<div class="footer__container">
+		<div class="footer__store">
+			<h6 class="footer__title">Store locator</h6>
+			<a class="footer__find-store" href="#">Find a store</a>
+		</div>
+
+		<div class="footer__social">
+			<h6 class="footer__title">Follow Vans</h6>
+			<div class="footer__social--buttons">
+				<a class="footer__social--link" href="#"><img class="footer__social--icon" src="media/icons/facebook.svg" alt=""></a>
+				<a class="footer__social--link" href="#"><img class="footer__social--icon" src="media/icons/twitter.svg" alt=""></a>
+				<a class="footer__social--link" href="#"><img class="footer__social--icon" src="media/icons/instagram.svg" alt=""></a>
+				<a class="footer__social--link" href="#"><img class="footer__social--icon" src="media/icons/pinterest.svg" alt=""></a>
+				<a class="footer__social--link" href="#"><img class="footer__social--icon" src="media/icons/youtube.svg" alt=""></a>
+			</div>
+		</div>
+
+		<div class="footer__logo">
+			<img class="footer__logo--vans" src="media/svg/logo.svg" alt="">
+		</div>
+
+		<div class="footer__links">
+			<a class="footer__links--item" href="#">Terms of use</a>
+			<a class="footer__links--item" href="#">Privacy</a>
+			<a class="footer__links--item" href="#">About</a>
+			<a class="footer__links--item" href="#">Career</a>
+			<a class="footer__links--item" href="#">Contact</a>
+		</div>
+
+		<div class="footer__language">
+			<div class="footer__language--dropdown">
+				<div class="footer__language--name">UK</div>
+				<img class="footer__language--flag" src="media/icons/uk.svg" alt="">
+				<img class="footer__language--arrow" src="media/svg/arrow-down.svg" alt="">
+			</div>
+		</div>
+	</div>
+</footer>
+
+<script type="text/javascript" src="script.js"></script>
+
+</body>
+</html>
